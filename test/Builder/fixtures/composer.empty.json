@@ -1,0 +1,8 @@
+{
+    "name": "aoe/composer-satis-generator-fixture-composer",
+    "description": "XXX",
+    "require": {
+    },
+    "require-dev": {
+    }
+}

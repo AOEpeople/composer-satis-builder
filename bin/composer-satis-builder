@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+namespace AOE\Tagging;
+
+if (file_exists(__DIR__ . '/../vendor/autoload.php')) {
+    require_once __DIR__ . '/../vendor/autoload.php';
+} else {
+    if (file_exists(__DIR__ . '/../../../autoload.php')) {
+        require_once __DIR__ . '/../../../autoload.php';
+    }
+}
+
+use AOE\Composer\Satis\Generator\Command\BuilderCommand;
+use Symfony\Component\Console\Application;
+
+$application = new Application();
+$application->add(new BuilderCommand());
+$application->run();

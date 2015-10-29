@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<phpunit
+        backupGlobals="false"
+        backupStaticAttributes="false"
+        bootstrap="vendor/autoload.php"
+        colors="false"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        forceCoversAnnotation="false"
+        processIsolation="false"
+        stopOnError="false"
+        stopOnFailure="false"
+        stopOnIncomplete="false"
+        stopOnSkipped="false"
+        verbose="false">
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src/</directory>
+        </whitelist>
+    </filter>
+    <testsuites>
+        <testsuite name="composer-satis-generator">
+            <directory>test/</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
