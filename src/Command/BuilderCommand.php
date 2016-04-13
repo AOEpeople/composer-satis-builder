@@ -78,12 +78,28 @@ class BuilderCommand extends Command
 
         $satis = json_decode(file_get_contents($satisFile));
         if (json_last_error() !== JSON_ERROR_NONE) {
-            throw new \RuntimeException(json_last_error() . ':' . json_last_error_msg(), 1447257223);
+            throw new \RuntimeException(
+                sprintf(
+                    'An error has occurred while decoding "%s". Error code: %s. Error message: "%s".',
+                    $satisFile,
+                    json_last_error(),
+                    json_last_error_msg()
+                ),
+                1447257223
+            );
         }
 
         $composer = json_decode(file_get_contents($composerFile));
         if (json_last_error() !== JSON_ERROR_NONE) {
-            throw new \RuntimeException(json_last_error() . ':' . json_last_error_msg(), 1447257260);
+            throw new \RuntimeException(
+                sprintf(
+                    'An error has occurred while decoding "%s". Error code: %s. Error message: "%s".',
+                    $satisFile,
+                    json_last_error(),
+                    json_last_error_msg()
+                ),
+                1447257260
+            );
         }
 
         $builder = new SatisBuilder($composer, $satis);
