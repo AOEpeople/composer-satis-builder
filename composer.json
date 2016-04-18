@@ -1,12 +1,12 @@
 {
     "name": "aoe/composer-satis-builder",
-    "description": "XXX",
-    "homepage": "https://github.com/AOEpeople/composer-satis-generator",
-    "license": "GPL-3.0",
+    "description": "Complementary tool to Satis for updating the satis.json 'require' key from the project composer.json.",
+    "homepage": "https://github.com/AOEpeople/composer-satis-builder",
+    "license": "MIT License",
     "support": {
         "email": "dev@aoe.com",
-        "issues": "https://github.com/AOEpeople/composer-satis-generator/issues",
-        "source": "https://github.com/AOEpeople/composer-satis-generator"
+        "issues": "https://github.com/AOEpeople/composer-satis-builder/issues",
+        "source": "https://github.com/AOEpeople/composer-satis-builder"
     },
     "authors": [
         {
