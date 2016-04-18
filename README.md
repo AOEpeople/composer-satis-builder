@@ -23,8 +23,7 @@ You can choose to manually maintain the "require" key which can be time-consumin
         [-rd|--require-dependencies REQUIRE-DEPENDENCIES] Sets the "require-dependencies" key
         [-rc|--add-requirements] Add the requirements from the project composer.json
         [-drc|--add-dev-requirements] Add the dev requirements from the project composer.json
-        [-rr|--reset-requirements] Will reset (empty) the satis requirements (require key)
-
+        [-rr|--reset-requirements] Will reset (empty) the satis requirements (require key) before adding the requirements of the composer.json
 
 
 ## Example
