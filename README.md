@@ -64,7 +64,7 @@ composer.json
         ]
     }
 
-Intall Composer Satis Builder:
+and Composer Satis Builder is installed:
 
     php composer.phar create-project aoe/composer-satis-builder --stability=dev
 
