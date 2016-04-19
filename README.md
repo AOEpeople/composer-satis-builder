@@ -64,9 +64,9 @@ composer.json
         ]
     }
 
-Clone the Composer Satis Builder:
+Intall Composer Satis Builder:
 
-    git clone https://github.com/AOEpeople/composer-satis-builder.git
+    php composer.phar create-project aoe/composer-satis-builder --stability=dev
 
 After running
 
