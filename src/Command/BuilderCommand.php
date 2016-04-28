@@ -81,7 +81,7 @@ class BuilderCommand extends Command
             throw new \RuntimeException(
                 sprintf(
                     'An error has occurred while decoding "%s". Error code: %s. Error message: "%s".',
-                    $satisFile,
+                    $satisFile . 'Satis content: ' . file_get_contents($satisFile),
                     json_last_error(),
                     json_last_error_msg()
                 ),
